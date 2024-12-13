@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f680c0f9-2751-471b-ad63-6a33ba50d91f</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>SkolWebApp</Name>
+    <RootNamespace>SkolWebApp</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DRDrafts\main.py" />
+    <Compile Include="runserver.py" />
+    <Compile Include="SkolWebApp\__init__.py" />
+    <Compile Include="SkolWebApp\views.py" />
+    <Compile Include="SKOL\file.py" />
+    <Compile Include="SKOL\fileobj.py" />
+    <Compile Include="SKOL\file_test.py" />
+    <Compile Include="SKOL\finder.py" />
+    <Compile Include="SKOL\finder_test.py" />
+    <Compile Include="SKOL\indexfungorum_authors.py" />
+    <Compile Include="SKOL\indexfungorum_authors_test.py" />
+    <Compile Include="SKOL\iso4.py" />
+    <Compile Include="SKOL\iso4_test.py" />
+    <Compile Include="SKOL\label.py" />
+    <Compile Include="SKOL\label_test.py" />
+    <Compile Include="SKOL\line.py" />
+    <Compile Include="SKOL\line_test.py" />
+    <Compile Include="SKOL\mycobank_authors.py" />
+    <Compile Include="SKOL\mycobank_species.py" />
+    <Compile Include="SKOL\mycobank_species_test.py" />
+    <Compile Include="SKOL\nomenclature.py" />
+    <Compile Include="SKOL\paragraph.py" />
+    <Compile Include="SKOL\paragraph_test.py" />
+    <Compile Include="SKOL\taxon.py" />
+    <Compile Include="SKOL\taxon_test.py" />
+    <Compile Include="SKOL\tokenizer.py" />
+    <Compile Include="SKOL\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DRDrafts\" />
+    <Folder Include="SKOL\" />
+    <Folder Include="Properties\" />
+    <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="SkolWebApp\" />
+    <Folder Include="SkolWebApp\static\" />
+    <Folder Include="SkolWebApp\static\content\" />
+    <Folder Include="SkolWebApp\static\fonts\" />
+    <Folder Include="SkolWebApp\static\scripts\" />
+    <Folder Include="SkolWebApp\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DRDrafts\.gitignore" />
+    <Content Include="DRDrafts\build_index.sh" />
+    <Content Include="DRDrafts\env.yml" />
+    <Content Include="DRDrafts\LICENSE" />
+    <Content Include="DRDrafts\README.md" />
+    <Content Include="DRDrafts\test.sh" />
+    <Content Include="requirements.txt" />
+    <Content Include="SkolWebApp\static\content\bootstrap.css" />
+    <Content Include="SkolWebApp\static\content\bootstrap.min.css" />
+    <Content Include="SkolWebApp\static\content\site.css" />
+    <Content Include="SkolWebApp\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="SkolWebApp\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="SkolWebApp\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="SkolWebApp\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="SkolWebApp\static\scripts\bootstrap.js" />
+    <Content Include="SkolWebApp\static\scripts\bootstrap.min.js" />
+    <Content Include="SkolWebApp\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="SkolWebApp\static\scripts\jquery-1.10.2.js" />
+    <Content Include="SkolWebApp\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="SkolWebApp\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="SkolWebApp\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="SkolWebApp\static\scripts\jquery.validate.js" />
+    <Content Include="SkolWebApp\static\scripts\jquery.validate.min.js" />
+    <Content Include="SkolWebApp\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="SkolWebApp\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="SkolWebApp\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="SkolWebApp\static\scripts\respond.js" />
+    <Content Include="SkolWebApp\static\scripts\respond.min.js" />
+    <Content Include="SkolWebApp\static\scripts\_references.js" />
+    <Content Include="SkolWebApp\templates\index.html" />
+    <Content Include="SkolWebApp\templates\layout.html" />
+    <Content Include="SkolWebApp\static\search.html" />
+    <Content Include="SKOL\.gitignore" />
+    <Content Include="SKOL\LICENSE" />
+    <Content Include="SKOL\Makefile" />
+    <Content Include="SKOL\README.md" />
+    <Content Include="SKOL\testCommmit.txt" />
+    <Content Include="SKOL\unsupervisedpcfg" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

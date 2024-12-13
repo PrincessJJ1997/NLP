@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Synoptic Key of Life</h1>
+    <p class="lead">
+        The project addresses the challenge of efficiently accessing and analyzing a large dataset of over 7,000 scientific articles focused on mycelia, collected from leading institutions. These articles are highly structured, with standardized classifications and descriptions in both Latin and English, allowing for advanced data processing.
+    </p>
+    <p>
+        <a href="../static/search.html">Try the search</a>
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Purpose</h2>
+        <p>
+            The team aims to develop an AI-powered tool that enables precise querying and retrieval of relevant articles based on input descriptions. This involves converting unstructured annotated text into a structured format suitable for downstream analysis or modeling. This solution streamlines the search for specific mycelial information, enhancing accessibility and utility for researchers in the field. By organizing and standardizing a complex dataset, the project facilitates sophisticated data-driven insights and query capabilities.
+
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>
+            Data Processing and Standardization:
+        </h2>
+        <p>
+            Parsing annotated text files into paragraphs and mapping annotations to structured data.
+            Relabeling paragraphs using predefined categories (e.g., "Description," "Nomenclature") or default labels for non-matching entries.
+            Filtering and normalizing data to retain only relevant content.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>
+            Data Organization and Analysis
+        </h2>
+        <p>
+            Transforming the processed data into a structured pandas DataFrame with detailed metadata, including paragraph labels, filenames, page numbers, and more.
+            Performing quality checks and statistical summaries to ensure data integrity and readiness for further analysis.
+        </p>
+    </div>
+</div>
+
+{% endblock %}
